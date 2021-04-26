@@ -1,0 +1,42 @@
+---
+title: "Example Run on Wine Dataset"
+author: "Anonymous Author(s)"
+date: "12 February 2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(pracma)
+library(igraph)
+source('functions.R')
+```
+
+
+```{r}
+X=read.csv('wine.csv',head=FALSE)
+toss=X[,14]
+X=X[,-14]
+```
+
+
+```{r}
+p=dim(X)[2]
+for(i in 1:p){
+  X[,i]=(X[,i]-mean(X[,i]))/sd(X[,i])
+}
+```
+
+```{r}
+M=X[sample(178,3),] # Randomly initialize the centroids
+l=t_wkmeans(X,M) # Example run
+```
+
+```{r}
+compare(toss,l[[1]],'nmi')
+compare(toss,l[[1]],'adjusted.rand')
+```
+
