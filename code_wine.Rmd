@@ -1,8 +1,8 @@
 ---
 title: "Example Run on Wine Dataset"
-author: "Anonymous Author(s)"
-date: "12 February 2021"
-output: pdf_document
+author: "Saptarshi Chakraborty, Debolina Paul, Swagatam Das"
+date: "27 April 2021"
+output: word_document
 ---
 
 ```{r setup, include=FALSE}
