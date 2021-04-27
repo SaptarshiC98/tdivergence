@@ -1,1 +1,1 @@
-# tdivergence
+This repository contains the code for t-divergence based weighted k-means clustering implemented in our paper, "t-Divergence: A New Divergence Measure with Application to Clustering and Robust Statistics".
