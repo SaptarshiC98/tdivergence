@@ -1,1 +1,1 @@
-This repository contains the code for t-divergence based weighted k-means clustering implemented in our paper, "t-Divergence: A New Divergence Measure with Application to Clustering and Robust Statistics".
+This repository contains the code for t-divergence based weighted k-means clustering implemented in our paper, "t-Divergence: A New Divergence Measure with Application to Clustering and Robust Statistics". The codes are in functions.R file and an example run on the wine dataset is givem in code_wine.pdf and code_wine.Rmd.
